@@ -1,0 +1,60 @@
+
+
+body {
+    text-align: center;
+}
+
+.container {
+    max-width: 600px;
+    margin: 10px auto;
+    border: 5px solid white;
+    overflow: auto;
+    line-height: 0;
+}
+
+.jumbo {
+    object-fit: cover;
+}
+
+.thumb {
+    max-width: 200px;
+    float: left;
+    border: 2px solid white;
+    box-sizing: border-box;
+}
+
+.thumb:hover {
+    cursor: pointer;
+    opacity: 0.5;
+}
+
+@keyframes fadeIn {
+    to {
+        opacity: 1;
+    }
+}
+
+.fade {
+    opacity: 0;
+    animation: fadeIn 0.5s forwards;
+}
+
+.active {
+    opacity: 0.5;
+}
+
+@media (max-width: 600px) {
+ 
+    .thumbnail {
+        box-sizing: border-box;
+        width: 450px;
+    }
+    .thumb {
+        width: 100px;
+        height: 100px;
+    }
+    .jumbo {
+        width: 400px;
+        height: 400px;
+    }
+}
